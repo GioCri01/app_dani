@@ -1,0 +1,9 @@
+.SeparatorLine{
+    width: 40%;
+    margin: 50px auto;
+    text-align: center;
+    border-bottom: 5px solid white;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}

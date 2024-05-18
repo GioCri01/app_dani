@@ -1,0 +1,138 @@
+.DetailProduct {
+  /* padding-top: 80px; */
+}
+
+.jumbotron {
+  width: 100%;
+  height: 700px;
+}
+
+.img-prodotto {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  padding-top: 120px;
+  display: flex;
+  justify-content: start;
+  text-transform: uppercase;
+  /* height: 100vh; */
+  /* height: 300px; */
+}
+
+.descr-prodotto {
+  width: 60%;
+  padding: 0 60px;
+}
+
+.img-prodotto {
+  /* width: 100%;
+    height: 100%; */
+  /* background-position: center; */
+  /* background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.info-product {
+  width: 100%;
+  height: 100%;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  color: white;
+  font-size: 20px;
+}
+.info-product p {
+  padding: 10px 0;
+}
+
+.info-product img {
+  object-fit: cover;
+  width: 800px;
+}
+
+.info-product h3 {
+  text-transform: uppercase;
+}
+
+.img-prodotto h1 {
+  font-size: 6.1em;
+}
+
+.audio-section {
+  height: 500px;
+}
+
+.audio-section .player-container {
+  font-family: "Custom-font";
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.audio-section .player-container select {
+  background-color: #ebebeb;
+  border-radius: 5px;
+
+  width: 200px;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.audio-section .player-container audio {
+  width: 50%;
+
+  border-radius: 10px;
+}
+
+.audio-section {
+  width: 100%;
+  height: 500px;
+  /* background-image: url("../../assets/img/x_player_noise.png"); */
+  background-color: orange;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+
+.audio-section 
+
+.player-product {
+  width: 100%;
+  height: 500px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .descr-prodotto h1,
+  h3 {
+    font-size: 15px;
+  }
+  .info-product {
+    flex-direction: column;
+  }
+
+  .info-product img {
+    width: 100%;
+  }
+
+  .audio-section {
+    flex-direction: column;
+  }
+
+  .audio-section .player-container {
+    padding: 0;
+  }
+}

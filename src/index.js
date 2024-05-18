@@ -1,13 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App, { HomePage } from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import DetailProdacts from './components/DetailProdacts/DetailProdacts';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+    children: [
+      {
+        path: "/",
+        element: <HomePage/>,
+        
+      },
+      {
+        path: "/detail/:id",
+        element: <DetailProdacts/>,
+        
+      },
+    ],
+  
+  },
+  // {
+  //   path: "/detail",
+  //   element: <DetailProdacts/>,
+  // },
+]);
+
 root.render(
-  <React.StrictMode>
-    <App />
+  <React.StrictMode>  
+      <RouterProvider router={router} /> 
   </React.StrictMode>
 );
 
