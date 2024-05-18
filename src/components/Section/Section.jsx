@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Section.css";
 import { useScroll, animated, useSpring } from "@react-spring/web";
 
-import imgLoopOrage from "../../assets/img/orage_loop.gif";
+import imgLoopOrage from '../../assets/img/orage_loop.gif';
 // import video from '../../assets/video/orage.loop.mp4'
 
 const Section = ({}) => {
@@ -18,7 +18,8 @@ const Section = ({}) => {
         if (internalPlayer) {
           internalPlayer.loop = true;
           internalPlayer.muted = true;
-          internalPlayer.play();
+          internalPlayer.play(); 
+          
         }
       }
     }, 100);
@@ -29,16 +30,27 @@ const Section = ({}) => {
   const [props, api] = useSpring(
     () => ({
       from: { opacity: 0 },
-      to: { opacity: 1 },
+      to: { opacity: 1},
       config: { duration: 2500 },
     }),
     []
   );
 
+ 
+
+ 
+
   return (
     <div className="Section">
-      <img className="bg-main" src={imgLoopOrage} alt="" />
-      <div className="overlay">Orage</div>
+      <img className="bg-main" src={imgLoopOrage} alt="" /> 
+      <animated.div
+        // className="transitionDiv"
+        style={props}
+        // onClick={handleClick}
+      >
+        <div className="overlay">Orage</div>
+        
+      </animated.div>
     </div>
   );
 };
