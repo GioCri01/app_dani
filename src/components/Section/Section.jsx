@@ -35,11 +35,7 @@ const Section = ({}) => {
     }),
     []
   );
-
- 
-
- 
-
+  
   return (
     <div className="Section">
       <img className="bg-main" src={imgLoopOrage} alt="" /> 
