@@ -34,7 +34,7 @@ const Header = ({ onScrollToSection,selectRef }) => {
         {onScrollToSection ? (
           <ul>
             <li onClick={() => onScrollToSection("prodotti")}>Prodotti</li>
-            <li onClick={() => onScrollToSection("chiSiamo")}>Contatti</li>
+            <li onClick={() => onScrollToSection("chiSiamo")}>Chi Siamo</li>
           </ul>
         ) : (
           <ul>
