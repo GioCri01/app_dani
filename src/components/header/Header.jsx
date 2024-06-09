@@ -14,12 +14,11 @@ const Header = ({onScrollToSection}) => {
   );
   return (
     <div className="Header">
-      <div  className="logo" onClick={() => navigate("/")}>Orage</div>
+      <div  className="logo" onClick={() =>onScrollToSection('home')}>Orage</div>
 
       <nav>
         {onScrollToSection?
           <ul>
-          <li onClick={() => onScrollToSection('home')}>Home</li>
           <li onClick={() => onScrollToSection('prodotti')}>Prodotti</li>
           <li onClick={() => onScrollToSection('chiSiamo')}>Chi Siamo</li>
         </ul>
