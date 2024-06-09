@@ -3,7 +3,7 @@ import "./Header.css";
 import { useSpring, animated } from "@react-spring/web";
 import { useNavigate } from "react-router";
 
-const Header = () => {
+const Header = ({onScrollToSection}) => {
   const navigate = useNavigate();
   const [props, api] = useSpring(
     () => ({
@@ -14,15 +14,21 @@ const Header = () => {
   );
   return (
     <div className="Header">
-      <div className="logo" onClick={() => navigate("/")}>Orage</div>
+      <div  className="logo" onClick={() => navigate("/")}>Orage</div>
 
       <nav>
-        <ul>
-          <li onClick={() => navigate("/")}>Home</li>
-          <li onClick={() => navigate("/detail")}>Prodotti</li>
-          {/* <li>Contatti</li>
-          <li>Supporto</li> */}
+        {onScrollToSection?
+          <ul>
+          <li onClick={() => onScrollToSection('home')}>Home</li>
+          <li onClick={() => onScrollToSection('prodotti')}>Prodotti</li>
+          <li onClick={() => onScrollToSection('chiSiamo')}>Chi Siamo</li>
         </ul>
+        :
+        <ul>
+          <li onClick={() => navigate('/')}>Home</li>
+          
+        </ul>
+        }
       </nav>
     </div>
   );

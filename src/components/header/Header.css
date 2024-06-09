@@ -16,6 +16,7 @@
     font-family: 'Custom-font', sans-serif;
     color: black;
     font-size: 35px;
+     cursor: pointer;
 }
 
 .Header ul {
@@ -28,4 +29,5 @@
 
 .Header ul li {
     list-style: none;
+    cursor: pointer;
 }

@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Contatti.css";
 import img1 from "../../assets/img/chi-siamo.png";
 import img2 from "../../assets/img/untitled51.png";
 import img3 from "../../assets/img/contatti_3.jpg";
 import img4 from "../../assets/img/contatti_4.jpg";
 
-const Contatti = () => {
+const Contatti = ({scrollTrigger}) => {
+  const ref = useRef();
+  useEffect(() => {
+    
+    if (scrollTrigger === "chiSiamo") {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [scrollTrigger]);
   return (
-    <div id="contatti-section" className="Contatti">
+    <div id="contatti-section" ref={ref} className="Contatti">
       <h1>About Orage Audio</h1>
       <div className="section">
         <div className="image">
