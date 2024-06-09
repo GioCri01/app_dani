@@ -15,11 +15,11 @@ import { useHistory } from "react-router-dom";
 import { log } from "three/examples/jsm/nodes/Nodes.js";
 
 export const HomePage = () => {
-  const [selectRef, setSelectRef] = useState("home");
+  const [selectRef, setSelectRef] = useState("");
 
   return (
     <>
-      <Header onScrollToSection={setSelectRef} />
+      <Header selectRef={selectRef} onScrollToSection={setSelectRef} />
       <Section scrollTrigger={selectRef} />
       <ProductsList scrollTrigger={selectRef} />
       <Contatti scrollTrigger={selectRef} />
@@ -29,10 +29,9 @@ export const HomePage = () => {
 
 function App() {
   const location = useLocation();
-  const [selectRef, setSelectRef] = useState("home");
+  const [selectRef, setSelectRef] = useState("");
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
-    console.log(location?.pathname);
     if (location?.pathname === "/detail/Evolver") {
       window.scrollTo(0, 0);
     }

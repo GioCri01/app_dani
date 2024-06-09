@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Header.css";
 import { useSpring, animated } from "@react-spring/web";
 import { useNavigate } from "react-router";
 
-const Header = ({onScrollToSection}) => {
+const Header = ({ onScrollToSection,selectRef }) => {
   const navigate = useNavigate();
   const [props, api] = useSpring(
     () => ({
@@ -12,22 +12,35 @@ const Header = ({onScrollToSection}) => {
     }),
     []
   );
+
+  useEffect(() => {
+    if (selectRef === 'home') {
+      onScrollToSection('')
+    }
+  }, [selectRef])
+  
   return (
     <div className="Header">
-      <div  className="logo" onClick={() =>onScrollToSection('home')}>Orage</div>
+      <div
+        className="logo"
+        onClick={() =>
+          onScrollToSection ? onScrollToSection("home") : navigate("/")
+        }
+      >
+        Orage
+      </div>
 
       <nav>
-        {onScrollToSection?
+        {onScrollToSection ? (
           <ul>
-          <li onClick={() => onScrollToSection('prodotti')}>Prodotti</li>
-          <li onClick={() => onScrollToSection('chiSiamo')}>Chi Siamo</li>
-        </ul>
-        :
-        <ul>
-          <li onClick={() => navigate('/')}>Home</li>
-          
-        </ul>
-        }
+            <li onClick={() => onScrollToSection("prodotti")}>Prodotti</li>
+            <li onClick={() => onScrollToSection("chiSiamo")}>Chi Siamo</li>
+          </ul>
+        ) : (
+          <ul>
+            <li onClick={() => navigate("/")}>Home</li>
+          </ul>
+        )}
       </nav>
     </div>
   );

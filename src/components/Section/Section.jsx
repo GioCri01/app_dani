@@ -28,6 +28,7 @@ const Section = ({ scrollTrigger }) => {
   }, []);
 
   useEffect(() => {
+
     if (scrollTrigger === "home") {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }

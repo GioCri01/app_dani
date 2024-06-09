@@ -12,6 +12,7 @@
   height: 100%;
   background-position: center;
   background-size: cover;
+ 
   padding-top: 120px;
   display: flex;
   justify-content: start;
@@ -117,6 +118,10 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .img-prodotto{
+    background-image: url("../../assets/img/mobile-img-2.png") !important;
+  }
   .descr-prodotto h1,
   h3 {
     font-size: 15px;

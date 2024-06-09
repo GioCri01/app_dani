@@ -98,14 +98,14 @@ const DetailProdacts = () => {
                 name=""
                 id=""
               >
-                {product?.track_list.map((item) => (
-                  <option value={item.source}>{item.title}</option>
+                {product?.track_list.map((item,i) => (
+                  <option key={i} value={item.source}>{item.title}</option>
                 ))}
               </select>
             </div>
           </div>
           <div>
-            <div className="offset"></div>
+            {/* <div className="offset"></div> */}
           </div>
         </div>
       </div>
