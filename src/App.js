@@ -18,8 +18,8 @@ export const HomePage = () => {
   return (
     <>
       <Section />
-
       <ProductsList />
+      <Contatti/>
     </>
   );
 };

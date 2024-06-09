@@ -112,7 +112,7 @@ const DetailProdacts = () => {
             </div>
           </div>
           <div>
-            {/* <div className="offset"></div> */}
+            <div className="offset"></div>
           </div>
         </div>
       </div>

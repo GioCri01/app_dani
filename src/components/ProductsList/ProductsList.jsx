@@ -17,7 +17,7 @@ const ProductsList = () => {
                 backgroundImage: `url(${item.img_prodotto})`,
                 backgroundPosition: "center",
                 backgroundSize: "contain",
-                backgroundColor: '#b0bda8',
+                backgroundColor: 'rgb(231, 151, 2)',
                 width: "100%",
                 height: "100%",
                 backgroundRepeat:'no-repeat'

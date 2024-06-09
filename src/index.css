@@ -3,6 +3,11 @@
   src: url('../src/assets/fonts/FugazOne-Regular\ \(1\).ttf') format('truetype'); /* Assicurati di specificare il percorso corretto al tuo file del font */
 }
 
+@font-face {
+  font-family: 'Custom-font-helvetica';
+  src: url('../src/assets/fonts/Helvetica\ Neue\ UltraLight.ttf') format('truetype'); /* Assicurati di specificare il percorso corretto al tuo file del font */
+}
+
 *{
   box-sizing: border-box;
   margin: 0;

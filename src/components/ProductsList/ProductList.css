@@ -1,13 +1,13 @@
 .ProductsList{
     width: 100%;
-    background-color: white;
-    padding: 50px 0;
+    /* background-color: white; */
+    /* padding: 50px 0; */
     /* height: 400px; */
     /* background-color: aquamarine; */
 }
 
 .itemListProduct{
-    width: 90%;
+    /* width: 90%; */
     height: 500px;
     display: flex;
     justify-content: space-between;
@@ -16,8 +16,8 @@
 }
 
 .description-product{
-    background-color: #b0bda8;
-    width: 50%;
+  background-color: rgb(231, 151, 2);
+    width: 70%;
     height: 100%;
     padding: 30px;
     display: flex;
