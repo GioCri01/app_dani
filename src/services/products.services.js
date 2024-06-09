@@ -5,8 +5,7 @@ import products_ from "../assets/img/product_no_bg.png";
 import img_1 from "../assets/img/untitled51.png";
 import img_2 from "../assets/img/2_evo_noise.png";
 import table from "../assets/img/tabella-specifiche.png";
-import audioProva from "../assets/audio/prova_audio.wav";
-import audioProva2 from "../assets/audio/elettronic_dry.wav";
+
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -27,12 +26,36 @@ export const productList = [
     table_product: table,
     track_list: [
       {
-        title: "cappella",
-        source: "prova_audio",
+        title: "Cappella Dry",
+        source: "cappella_dry",
       },
       {
-        title: "eletric",
+        title: "Cappella Wet",
+        source: "cappella_wet",
+      },
+      {
+        title: "Elettronic Dry",
         source: "elettronic_dry",
+      },
+      {
+        title: "Elettronic Wet",
+        source: "elettronic_wet",
+      },
+      {
+        title: "Rock Vox Dry",
+        source: "Rockvox_dry",
+      },
+      {
+        title: "Rock Vox Wet",
+        source: "Rockvox_wet",
+      },
+      {
+        title: "Trap Vox Dry",
+        source: "trapvox_dry",
+      },
+      {
+        title: "Trap Vox Wet",
+        source: "trapvox_wet",
       },
     ],
   },

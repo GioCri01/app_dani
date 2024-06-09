@@ -5,16 +5,14 @@ import {
   getProductByName,
 } from "../../services/products.services";
 import "./DetailProducts.css";
-import audioProva2 from "../../assets/audio/elettronic_dry.wav";
-import ReactPlayer from "react-player";
-import imgAudioSection from '../../assets/img/x_player_noise.png'
+
 
 const DetailProdacts = () => {
   const { id } = useParams();
 
   const [product, setProduct] = useState();
   const [currentAudio, setCurrentAudio] = useState(
-    require(`../../assets/audio/prova_audio.wav`)
+    require(`../../assets/audio/cappella_dry.wav`)
   );
   const [updatePlayer, setUpdatePlayer] = useState(true);
 
@@ -22,11 +20,6 @@ const DetailProdacts = () => {
     setProduct(getProductByName(id));
   }, []);
 
-  useEffect(() => {
-    console.log("currentAudio", currentAudio);
-  }, [currentAudio]);
-
-  console.log(product);
   return (
     <div className="DetailProduct">
       <div className="jumbotron">
