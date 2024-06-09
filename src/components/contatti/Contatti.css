@@ -8,9 +8,10 @@
 
 .Contatti h1 {
   text-align: center;
-  font-size: 50px;
-  margin: 20px 0;
+  /* margin: 40px 0; */
+  padding: 40px 0;
   font-family: 'Custom-font';
+  font-size: 60px;
 }
 
 .section {
@@ -55,6 +56,13 @@
 @media (max-width: 768px) {
   .section, .section.reverse {
     flex-direction: column;
+  }
+
+  .Contatti h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+    font-family: 'Custom-font';
   }
 
   .section .text, .section .image, .section.reverse .text, .section.reverse .image {
