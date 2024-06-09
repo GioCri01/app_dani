@@ -20,12 +20,13 @@ const ProductsList = ({scrollTrigger}) => {
       {productList.map((item, i) => (
         <div key={i} className="itemListProduct">
           <div
+          className="bg-img"
             style={{
               backgroundImage: `url(${item.img_prodotto})`,
               backgroundPosition: "center",
               backgroundSize: "contain",
               backgroundColor: "rgb(231, 151, 2)",
-              width: "100%",
+              // width: "65%",
               height: "100%",
               backgroundRepeat: "no-repeat",
             }}

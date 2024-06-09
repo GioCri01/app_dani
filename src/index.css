@@ -8,6 +8,11 @@
   src: url('../src/assets/fonts/Helvetica\ Neue\ UltraLight.ttf') format('truetype'); /* Assicurati di specificare il percorso corretto al tuo file del font */
 }
 
+@font-face {
+  font-family: 'Custom-font-magnum';
+  src: url('../src/assets/fonts/Magnum_Sans_W01_Heavy_V1.ttf') format('truetype'); /* Assicurati di specificare il percorso corretto al tuo file del font */
+}
+
 *{
   box-sizing: border-box;
   margin: 0;

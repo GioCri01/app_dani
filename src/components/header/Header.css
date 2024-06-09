@@ -29,5 +29,6 @@
 
 .Header ul li {
     list-style: none;
-    cursor: pointer;
+    cursor: pointer; 
+    font-family: 'Custom-font';
 }

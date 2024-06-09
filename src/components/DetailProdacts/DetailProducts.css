@@ -27,6 +27,13 @@
   padding: 0 60px;
 }
 
+.descr-prodotto h1{
+  font-family: 'Custom-font';
+}
+.descr-prodotto h3{
+  font-family: 'Custom-font-magnum';
+}
+
 .img-prodotto {
   /* width: 100%;
     height: 100%; */
@@ -120,6 +127,7 @@
 @media screen and (max-width: 600px) {
 
   .img-prodotto{
+ 
     background-image: url("../../assets/img/mobile-img-2.png") !important;
   }
   .descr-prodotto h1,
@@ -138,17 +146,20 @@
   .descr-prodotto {
     width: 100%;
     padding: 0 20px;
+   
     /* display: none; */
   }
 
   .descr-prodotto h1{
     font-size: 60px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    
   }
 
   .descr-prodotto h3{
     text-align: center;
+   
   }
 
   .audio-section {
