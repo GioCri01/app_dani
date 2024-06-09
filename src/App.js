@@ -31,14 +31,16 @@ function App() {
   const location = useLocation();
   const [selectRef, setSelectRef] = useState("home");
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [location?.pathname]);
+  useEffect(() => {
+    console.log(location?.pathname);
+    if (location?.pathname === "/detail/Evolver") {
+      window.scrollTo(0, 0);
+    }
+  }, [location?.pathname]);
   return (
     <>
-      <Header/>
+      <Header />
       <Outlet />
-      {/* <ScrollButton /> */}
     </>
   );
 }

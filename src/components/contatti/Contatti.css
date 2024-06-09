@@ -1,9 +1,10 @@
 .Contatti {
+  height: 100vh;
   color: #d6d6d6;
   font-family: serif;
   position: relative;
   background-color: #2e2e2e;
-  /* padding: 20px; */
+  padding: 80px 0;
 }
 
 .Contatti h1 {

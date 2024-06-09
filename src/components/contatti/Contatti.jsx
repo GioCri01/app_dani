@@ -5,12 +5,11 @@ import img2 from "../../assets/img/untitled51.png";
 import img3 from "../../assets/img/contatti_3.jpg";
 import img4 from "../../assets/img/contatti_4.jpg";
 
-const Contatti = ({scrollTrigger}) => {
+const Contatti = ({ scrollTrigger }) => {
   const ref = useRef();
   useEffect(() => {
-    
     if (scrollTrigger === "chiSiamo") {
-      ref.current.scrollIntoView({ behavior: "smooth" });
+      ref.current.scrollIntoView({behavior: "smooth" });
     }
   }, [scrollTrigger]);
   return (
@@ -22,11 +21,11 @@ const Contatti = ({scrollTrigger}) => {
         </div>
         <div className="text">
           <p>
-            Benvenuti in Orage, un'azienda all'avanguardia nel settor
-            dell'audio che unisce con maestria innovazione e nostalgia. Siamo
-            mossi dalla passione per il suono e impegnati nella continua ricerca
-            di eccellenza, creando prodotti che ispirano e soddisfano anche i
-            gusti più raffinati.
+            Benvenuti in Orage, un'azienda all'avanguardia nel settor dell'audio
+            che unisce con maestria innovazione e nostalgia. Siamo mossi dalla
+            passione per il suono e impegnati nella continua ricerca di
+            eccellenza, creando prodotti che ispirano e soddisfano anche i gusti
+            più raffinati.
           </p>
         </div>
       </div>
