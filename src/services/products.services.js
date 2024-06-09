@@ -21,7 +21,7 @@ export const productList = [
     nome_prodotto: "Evolver",
     img_prodotto: products_,
     descrizione_prodotto:
-      "Evolver: L'Innovazione Vintage per un Suono Analogico Perfetto",
+      "L'Innovazione Vintage per un Suono Analogico Perfetto",
     dettaglio_prodotto_img: [img_2, img_1],
     table_product: table,
     track_list: [
