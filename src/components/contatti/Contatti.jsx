@@ -2,6 +2,8 @@ import React from "react";
 import "./Contatti.css";
 import img1 from "../../assets/img/chi-siamo.png";
 import img2 from "../../assets/img/untitled51.png";
+import img3 from "../../assets/img/contatti_3.jpg";
+import img4 from "../../assets/img/contatti_4.jpg";
 
 const Contatti = () => {
   return (
@@ -13,7 +15,7 @@ const Contatti = () => {
         </div>
         <div className="text">
           <p>
-            Benvenuti in Orage, un'azienda all'avanguardia nel settore
+            Benvenuti in Orage, un'azienda all'avanguardia nel settor
             dell'audio che unisce con maestria innovazione e nostalgia. Siamo
             mossi dalla passione per il suono e impegnati nella continua ricerca
             di eccellenza, creando prodotti che ispirano e soddisfano anche i
@@ -42,7 +44,7 @@ const Contatti = () => {
       </div>
       <div className="section ">
         <div className="image">
-          <img src={img2} alt="Description 2" />
+          <img src={img3} alt="Description 2" />
         </div>
         <div className="text">
           <p>
@@ -58,7 +60,7 @@ const Contatti = () => {
       </div>
       <div className="section reverse">
         <div className="image">
-          <img src={img1} alt="Description 2" />
+          <img src={img4} alt="Description 2" />
         </div>
         <div className="text">
           <p>
